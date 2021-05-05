@@ -1,0 +1,14 @@
+$theme-colors: (
+  "darkGreen": #134724,
+  "lightGray": #f8fafb,
+  "froly": #EE6588,
+  "maroonFlush": #D52349,
+  "primary": #D52349,
+  "darkGray": #222222,
+);
+
+@import "~bootstrap/scss/bootstrap";
+@import "~admin-lte/build/scss/adminlte";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/regular";

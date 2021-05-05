@@ -1,0 +1,21 @@
+@import "theme";
+//universal
+main.content {
+  padding-top: 72px;
+}
+//lightbox
+@import "~lightbox2/dist/css/lightbox.css";
+//header
+@import "header";
+
+//pages
+@import "home";
+@import "aboutus";
+@import "category";
+@import "product-detail";
+@import "news-detail";
+@import "contact";
+
+
+//footer
+@import "footer";

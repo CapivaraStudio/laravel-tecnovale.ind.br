@@ -1,0 +1,45 @@
+@import "theme";
+@import "auth/login";
+
+header {
+  .main-header {
+    .nav-link.active {
+      color: theme-color('maroonFlush')!important;
+    }
+  }
+}
+
+.card-body {
+  @extend .login-card-body
+}
+
+.ck-editor {
+  @extend .col;
+  .ck-editor__main {
+    .ck-focused {
+      border-color: theme-color('maroonFlush')!important;
+    }
+
+    .ck-editor__editable_inline {
+      min-height: 100px;
+      max-height: 300px;
+    }
+  }
+}
+
+table.table {
+  tr td.fitwidth {
+    white-space: nowrap;
+    width: 1px;
+  }
+  tr td {
+    vertical-align: middle;
+  }
+}
+
+.btn-img-delete {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+}

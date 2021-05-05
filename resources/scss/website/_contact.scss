@@ -1,0 +1,15 @@
+.cnt-container {
+  .cnt-info {
+    a {
+      color: theme-color('dark-gray');
+    }
+    i.material-icons {
+      font-size: 3rem;
+    }
+  }
+  .ctn-form {
+    textarea {
+      resize: none;
+    }
+  }
+}

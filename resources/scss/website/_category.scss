@@ -1,0 +1,16 @@
+.ctg-container {
+  .card-body {
+    .ctg-products-image {
+      position: relative;
+      height: 180px;
+      overflow: hidden;
+      >i {
+        color: theme-color('dark-green');
+        font-size: 3rem;
+      }
+    }
+  }
+  .card-text {
+    font-size: 1rem;
+  }
+}

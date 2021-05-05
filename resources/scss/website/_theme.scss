@@ -1,0 +1,18 @@
+$theme-colors: (
+  "primary": #134724,
+  "dark-green": #134724,
+  "light-gray": #f8fafb,
+  "dark-gray": #222222,
+  "white": #ffffff,
+  "froly": #EE6588,
+  "maroon-flush": #D52349,
+  "red-orange": #f44336,
+  "yellow": #ebc02a,
+);
+
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+
+$material-design-icons-font-directory-path: '~material-design-icons-iconfont/dist/fonts/';
+@import "~material-design-icons-iconfont/src/material-design-icons";

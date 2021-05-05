@@ -1,0 +1,26 @@
+.abt-know-more {
+  h3 {
+    font-weight: 400;
+    font-size: 1.3rem;
+  }
+  section {
+    i {
+      font-size: 3rem;
+      color: theme-color('dark-green');
+    }
+    h5 {
+      font-size: 2rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.abt-cards {
+  background-color: theme-color('light-gray');
+  .card-body {
+    i.material-icons {
+      font-size: 4rem;
+      color: theme-color('dark-green');
+    }
+  }
+}

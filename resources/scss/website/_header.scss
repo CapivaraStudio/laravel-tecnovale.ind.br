@@ -1,0 +1,28 @@
+.navbar {
+  >.container {
+    min-height: 72px;
+  }
+  .navbar-brand {
+    background-image: url("/images/logo.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+  }
+  .navbar-nav {
+    .nav-item a{
+      color: theme-color('dark-gray');
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        color: white;
+        background: theme-color('dark-green');
+      }
+    }
+    .dropdown-item {
+
+    }
+  }
+}

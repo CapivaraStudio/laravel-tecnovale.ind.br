@@ -1,0 +1,96 @@
+.hm-hero{
+  background-color: rgba(0,0,0,.5);
+  height: calc(100vh - 72px);
+  position: relative;
+  .hm-hero-bg {
+    background: url('/images/home-hero.jpg') no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+  }
+  .hm-hero-content-left {
+    h2 {
+      color: theme-color('white');
+      font-weight: 500;
+      padding: 15px;
+      display: inline-block;
+      background: #fff3;
+      span {
+        color: theme-color('dark-green')
+      }
+    }
+    h3 {
+      color: theme-color('white');
+      font-size: 3rem;
+      display: block;
+      padding: 20px 0;
+      line-height: 1;
+      font-weight: 400;
+    }
+    p {
+      color: theme-color('light-gray');
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+  }
+}
+.hm-cards {
+  .card-body {
+    i.material-icons {
+      font-size: 4rem;
+      color: theme-color('dark-green');
+    }
+  }
+}
+
+.hm-section-title {
+  color: theme-color('dark-green');
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.hm-aboutus {
+  background-color: theme-color('light-gray');
+  h4 {
+    font-size: 2rem;
+    color: theme-color('dark-gray');
+    font-weight: 400;
+  }
+  p {
+    font-weight: 400;
+    font-size: 1rem;
+  }
+  section {
+    i {
+      font-size: 3rem;
+      color: theme-color('dark-green');
+    }
+    h5 {
+      font-size: 2rem;
+      font-weight: 400;
+    }
+  }
+}
+
+.hm-products {
+  div>p {
+    color: theme-color('dark-gray');
+    font-size: 2rem;
+  }
+  .card-body {
+    .hm-products-image {
+      position: relative;
+      height: 180px;
+      overflow: hidden;
+      >i {
+        color: theme-color('dark-green');
+        font-size: 3rem;
+      }
+    }
+  }
+  .card-text {
+    font-size: 1rem;
+  }
+}
