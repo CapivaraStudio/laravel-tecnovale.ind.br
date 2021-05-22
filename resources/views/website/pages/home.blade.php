@@ -1,4 +1,19 @@
 @extends('website.layout')
+@section('title')
+Tecnovale - Sementes e Cereais
+@endsection
+@section('metatags')
+  <meta name="description" content="O melhor da indústria de processamento de cereais no Vale dos Sinos.">
+{{--Open Graph--}}
+  <meta property="og:locale" content="pt-br">
+  <meta property="og:url" content="{{ url('') }}">
+  <meta property="og:title" content="Tecnovale - Sementes e Cereais">
+  <meta property="og:site_name" content="Tecnovale">
+  <meta property="og:description" content="O melhor da indústria de processamento de cereais no Vale dos Sinos.">
+  <meta property="og:image" content="{{ url('/images/logo.jpg') }}">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:type" content="website">
+@endsection
 @section('content')
   <section class="hm-hero">
     <div class="hm-hero-bg"></div>

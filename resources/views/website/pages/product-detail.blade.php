@@ -1,4 +1,23 @@
 @extends('website.layout')
+@section('title')
+  Tecnovale - {{ $product->name??'' }}
+@endsection
+@section('metatags')
+  <meta name="description" content="{{ Illuminate\Support\Str::limit(strip_tags($product->description), 200) }}">
+  {{--Open Graph--}}
+  <meta property="og:locale" content="pt-br">
+  <meta property="og:url" content="{{ url($product->slug??'') }}">
+  <meta property="og:title" content="Tecnovale - {{ $product->title??'' }}">
+  <meta property="og:site_name" content="Tecnovale">
+  <meta property="og:description" content="{{ Illuminate\Support\Str::limit(strip_tags($product->description), 200) }}">
+  @if($product->images()->where('primary', true)->first())
+    <meta property="og:image" content="{{ url('storage/'.$product->images()->where('primary', true)->first()->path) }}">
+  @else
+    <meta property="og:image" content="{{ url('/images/logo.jpg') }}">
+  @endif
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:type" content="website">
+@endsection
 @section('content')
   <div class="page-title bg-dark-green py-5">
     <h2 class="text-center text-white m-0">{{ $product->name }}</h2>

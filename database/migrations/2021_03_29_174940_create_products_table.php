@@ -17,9 +17,9 @@ class CreateProductsTable extends Migration
           $table->id();
           $table->string('name');
           $table->string('slug');
-          $table->text('description');
-          $table->text('presentation');
-          $table->text('technology');
+          $table->text('description')->nullable();;
+          $table->text('presentation')->nullable();;
+          $table->text('technology')->nullable();;
           $table->boolean('active');
           $table->unsignedBigInteger('category');
           $table->timestamps();

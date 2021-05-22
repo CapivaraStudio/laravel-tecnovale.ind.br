@@ -1,4 +1,19 @@
 @extends('website.layout')
+@section('title')
+  Tecnovale - Contato
+@endsection
+@section('metatags')
+  <meta name="description" content="Entre em contato com a Tecnovale pelo telefone: {{ $contact->phone1 }} ou pelo email: {{ $contact->email }}">
+  {{--Open Graph--}}
+  <meta property="og:locale" content="pt-br">
+  <meta property="og:url" content="{{ url('/contato') }}">
+  <meta property="og:title" content="Tecnovale - Contato">
+  <meta property="og:site_name" content="Tecnovale">
+  <meta property="og:description" content="Entre em contato com a Tecnovale pelo telefone: {{ $contact->phone1 }} ou pelo email: {{ $contact->email }}">
+  <meta property="og:image" content="{{ url('/images/logo.jpg') }}">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:type" content="website">
+@endsection
 @section('content')
   <div class="page-title bg-dark-green py-5">
     <h2 class="text-center text-white m-0">Contato</h2>

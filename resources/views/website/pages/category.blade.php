@@ -1,4 +1,19 @@
 @extends('website.layout')
+@section('title')
+Tecnovale - {{ $category->name ?? 'Todos os produtos' }}
+@endsection
+@section('metatags')
+    <meta name="description" content="{{ $category->name ?? 'Todos os produtos' }}">
+    {{--Open Graph--}}
+    <meta property="og:locale" content="pt-br">
+    <meta property="og:url" content="{{ url($category->slug??'/') }}">
+    <meta property="og:title" content="Tecnovale - {{ $category->name ?? 'Todos os produtos' }}">
+    <meta property="og:site_name" content="Tecnovale">
+    <meta property="og:description" content="{{ $category->name ?? 'Todos os produtos' }}">
+    <meta property="og:image" content="{{ url('/images/logo.jpg') }}">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:type" content="website">
+@endsection
 @section('content')
   <div class="page-title bg-dark-green py-5">
     <h2 class="text-center text-white m-0">{{ $category->name ?? 'Todos os produtos' }}</h2>
